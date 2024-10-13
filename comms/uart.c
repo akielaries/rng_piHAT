@@ -1,6 +1,6 @@
 #include <stdint.h>
-#include "comms.h"
 
+#include "comms.h"
 
 static int uart_init(comm_context_t *ctx);
 static int uart_read_one(comm_context_t *ctx, uint16_t timeout_ms);
