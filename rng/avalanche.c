@@ -1,6 +1,6 @@
 #include <stdint.h>
 
-#include "driver.h"
+#include "rng/circuit_driver.h"
 #include "comms/comms.h"
 
 

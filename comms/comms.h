@@ -35,14 +35,14 @@ typedef struct {
    * @param[in] data      single uint32 input
    * @param[in] timout_ms timeout after given time
    *
-   * @return bytes read, < 0 on failure
+   * @return bytes written, < 0 on failure
    */
   int (*write_one)(comm_context_t *ctx, uint32_t tx, uint16_t timeout_ms);
   /**
    * @brief write a buffer of bytes to the comms stream
    *
    *
-   * @return bytes read, < 0 on failure
+   * @return bytes written, < 0 on failure
    */
   int (*write)(comm_context_t *ctx, uint32_t *tx, uint16_t tx_sz, uint16_t timeout_ms);
 
