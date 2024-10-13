@@ -1,7 +1,8 @@
 # rng_piHAT
 Pi HAT with randon noise and number generators 
 
-## Hardware RNG using an avalanche noise generator.
+# Hardware Random Number Generators
+## Avalanche noise generator
 The avalanche noise generator circuit consists of:
 - 2x 4.7k resistors
 - 1x 10k resistor
