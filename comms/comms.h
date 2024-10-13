@@ -3,6 +3,7 @@
 
 typedef enum {
   COMMS_SPI = 0,
+  COMMS_ANALOG,
   COMMS_UART,
   COMMS_I2C,
 } comm_types_e;
