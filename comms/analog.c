@@ -1,11 +1,11 @@
 #include <stdint.h>
+#include <stddef.h>
+
 #include "comms.h"
 
 static int init(comm_context_t *ctx);
 static int read_one(comm_context_t *ctx, uint16_t timeout_ms);
 static int read(comm_context_t *ctx, uint32_t *rx, uint16_t rx_sz, uint16_t timeout_ms);
-static int write_one(comm_context_t *ctx, uint32_t tx, uint16_t timeout_ms);
-static int write(comm_context_t *ctx, uint32_t *tx, uint16_t tx_sz, uint16_t timeout_ms);
 
 comm_driver_t analog_ops = {
   .init = init,
@@ -33,14 +33,6 @@ static int read(comm_context_t *ctx, uint32_t *rx, uint16_t rx_sz, uint16_t time
   return bytes_read;
 }
 
-static int write_one(comm_context_t *ctx, uint32_t tx, uint16_t timeout_ms) {
-  int bytes_written = 0;
-
-  return bytes_written;
-}
-
-static int write(comm_context_t *ctx, uint32_t *tx, uint16_t tx_sz, uint16_t timeout_ms) {
-  int bytes_written = 0;
 
   return bytes_written;
 }
