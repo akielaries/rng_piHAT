@@ -1,6 +1,8 @@
 #ifndef RNG_DRIVER_H
 #define RNG_DRIVER_H
 
+#include <stdint.h>
+
 typedef enum {
   RNG_AVALANCHE_NOISE = 0,
   RNG_THERMAL_NOISE,
@@ -24,13 +26,21 @@ typedef struct {
    */
   int (*reset)(rng_context_t *ctx);
   /**
-   * @brief read one byte from the stream
+   * @brief read one random byte from the stream
+   *
+   * @return byte read, some meaningful errno on failure
    */
-  int (*read_one)(rng_context *ctx, int32_t byte);
+  int (*read_one)(rng_context_t *ctx, uint16_t timeout_ms);
   /**
-   * @brief read a buffer of bytes from the stream
+   * @brief read a buffer of random bytes from the stream
+   *
+   * @return bytes read, < 0 on failure
    */
-  int (*read)(rng_context_t *ctx, int32_t *bytes);
+  int (*read)(rng_context_t *ctx, uint32_t *buf, uint16_t buf_sz, uint16_t timeout_ms);
+  /**
+   * @brief device/circuit ioctl operation
+   */
+  int (*ioctl)(rng_context_t *ctx, uint32_t opcode, void *data);
 } rng_driver_t;
 
 #endif
