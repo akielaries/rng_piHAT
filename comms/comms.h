@@ -1,6 +1,8 @@
 #ifndef COMMS_H
 #define COMMS_H
 
+#include <stdint.h>
+
 typedef enum {
   COMMS_SPI = 0,
   COMMS_ANALOG,

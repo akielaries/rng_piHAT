@@ -1,6 +1,7 @@
 #ifndef RNG_DRIVER_H
 #define RNG_DRIVER_H
 
+#include <stdint.h>
 
 typedef enum {
   RNG_AVALANCHE_NOISE = 0,
