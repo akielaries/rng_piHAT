@@ -9,6 +9,7 @@ static int i2c_write_one(comm_context_t *ctx, uint32_t tx, uint16_t timeout_ms);
 static int i2c_write(comm_context_t *ctx, uint32_t *tx, uint16_t tx_size, uint16_t timeout_ms);
 static int i2c_ioctl(comm_context_t *ctx, uint32_t opcode, void *data);
 
+
 comm_driver_t i2c_ops = { 
   .init       = i2c_init,
   .read_one   = i2c_read_one,

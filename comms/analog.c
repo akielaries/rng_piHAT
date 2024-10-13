@@ -8,6 +8,7 @@ static int analog_read_one(comm_context_t *ctx, uint16_t timeout_ms);
 static int analog_read(comm_context_t *ctx, uint32_t *rx, uint16_t rx_sz, uint16_t timeout_ms);
 static int analog_ioctl(comm_context_t *ctx, uint32_t opcode, void *data);
 
+
 comm_driver_t analog_ops = {
   .init       = analog_init,
   .read_one   = analog_read_one,
