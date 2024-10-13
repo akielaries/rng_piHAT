@@ -11,7 +11,9 @@ typedef enum {
 } comm_types_e;
 
 typedef struct {
-  uint8_t type;
+  uint8_t   type;
+  uint32_t  baud;
+
 } comm_context_t;
 
 typedef struct {
