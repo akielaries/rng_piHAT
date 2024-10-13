@@ -45,7 +45,13 @@ typedef struct {
    * @return bytes written, < 0 on failure
    */
   int (*write)(comm_context_t *ctx, uint32_t *tx, uint16_t tx_sz, uint16_t timeout_ms);
-
+  /**
+   * @brief some comms specific ioctl operation
+   *
+   * @param[in] ctx comm context pointer
+   * @parma[]
+   */
+  int (*ioctl)(comm_context_t *ctx, uint32_t opcode, void *data);
 } comm_driver_t;
 
 #endif
