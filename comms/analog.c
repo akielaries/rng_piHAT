@@ -32,7 +32,3 @@ static int read(comm_context_t *ctx, uint32_t *rx, uint16_t rx_sz, uint16_t time
 
   return bytes_read;
 }
-
-
-  return bytes_written;
-}
