@@ -1,8 +1,8 @@
 
 tmp_make:
-	arm-none-eabi-gcc comms/analog.c comms/uart.c
-	arm-none-eabi-gcc rng/avalanche.c
+	arm-none-eabi-gcc comms/analog.c comms/uart.c rng/avalanche.c
 
 lazy_verify:
-	gcc comms/analog.c comms/uart.c
-	gcc rng/avalanche.c
+	gcc -Werror -Wall  -pedantic comms/analog.c comms/uart.c comms/spi.c	rng/avalanche.c -Icomms/
+
+
