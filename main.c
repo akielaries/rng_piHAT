@@ -10,14 +10,23 @@
 #include <stdio.h>
 
 #include "rng/circuit_driver.h"
+#include "comms.h"
 
 
 int main (void) {
   int ret = 0;
 
-  printf("starting\n");
+  LOG(LOG_LEVEL_INFO, "starting with ret=%d\n", ret);
+
+  //rng_context_t *rng_ctx = rng_init(RNG_AVALANCHE_NOISE);
+  rng_context_t *rng_ctx = rng_init(RNG_THERMAL_NOISE);
+  if (!rng_ctx) {
+    ret = -1;
+    return ret;
+  }
 
 
 
+  LOG(LOG_LEVEL_INFO, "ending with ret=%d\n", ret);
   return ret;
 }
