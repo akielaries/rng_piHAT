@@ -16,7 +16,7 @@
 int main (void) {
   int ret = 0;
 
-  LOG(LOG_LEVEL_INFO, "starting with ret=%d\n", ret);
+  LOG(LVL_INFO, "starting with ret=%d\n", ret);
 
   //rng_context_t *rng_ctx = rng_init(RNG_AVALANCHE_NOISE);
   rng_context_t *rng_ctx = rng_init(RNG_THERMAL_NOISE);
@@ -27,6 +27,6 @@ int main (void) {
 
 
 
-  LOG(LOG_LEVEL_INFO, "ending with ret=%d\n", ret);
+  LOG(LVL_INFO, "ending with ret=%d\n", ret);
   return ret;
 }
