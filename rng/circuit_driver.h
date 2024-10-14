@@ -3,20 +3,29 @@
 
 #include <stdint.h>
 
+
+/** @brief forward declare driver struct for use as a pointer */
+typedef struct rng_driver_t rng_driver_t;
+
 typedef enum {
   RNG_AVALANCHE_NOISE = 0,
   RNG_THERMAL_NOISE,
+  /*
   RNG_SHOT_NOISE,
   RNG_RING_OSCILLATOR,
   RNG_JITTER,
   RNG_DECAY,
+  */
+  RNG_TYPES_END,
+  RNG_NUM_TYPES = RNG_TYPES_END - 1,
 } rng_types_e;
 
 typedef struct {
-  uint8_t type;
+  rng_types_e   type;     /** @brief RNG type */
+  rng_driver_t  *driver;  /** @brief RNG driver functions */
 } rng_context_t;
 
-typedef struct {
+typedef struct rng_driver_t {
   /**
    * @brief initialize RNG + type
    *
@@ -64,5 +73,11 @@ typedef struct {
    */
   int (*ioctl)(rng_context_t *ctx, uint32_t opcode, void *data);
 } rng_driver_t;
+
+/**
+ * @brief top level circuit initialize function. this sets up the driver and context
+ * to use for the RNG circuit
+ */
+rng_context_t *rng_init(rng_types_e type);
 
 #endif
