@@ -3,17 +3,42 @@
 
 #include <stdint.h>
 
+#include <stdio.h>
+#include <time.h>
+
+#define LOG_LEVEL_INFO  1
+#define LOG_LEVEL_WARN  2
+#define LOG_LEVEL_ERROR 3
+
+#define LOG(level, fmt, ...) \
+  do { \
+        const char* level_str; \
+        switch (level) { \
+            case LOG_LEVEL_INFO:  level_str = "INFO"; break; \
+            case LOG_LEVEL_WARN:  level_str = "WARN"; break; \
+            case LOG_LEVEL_ERROR: level_str = "ERROR"; break; \
+            default: level_str = "LOG"; \
+        } \
+        time_t now = time(NULL); \
+        struct tm *tm_info = localtime(&now); \
+        char time_buffer[26]; \
+        strftime(time_buffer, 26, "%Y-%m-%d %H:%M:%S", tm_info); \
+        printf("[%s] [%s] " fmt "\n", time_buffer, level_str, ##__VA_ARGS__); \
+    } while (0)
+
+
 typedef enum {
   COMMS_SPI = 0,
   COMMS_ANALOG,
   COMMS_UART,
   COMMS_I2C,
+  COMMS_END,
+  COMMS_NUM_TYPES = COMMS_END - 1;
 } comm_types_e;
 
 typedef struct {
   uint8_t   type;
   uint32_t  baud;
-
 } comm_context_t;
 
 typedef struct {
