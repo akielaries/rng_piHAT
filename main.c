@@ -18,9 +18,10 @@ int main (void) {
 
   LOG(LVL_INFO, "starting with ret=%d\n", ret);
 
-  //rng_context_t *rng_ctx = rng_init(RNG_AVALANCHE_NOISE);
-  rng_context_t *rng_ctx = rng_init(RNG_THERMAL_NOISE);
-  if (!rng_ctx) {
+  rng_context_t *rng_av_ctx = rng_init(RNG_AVALANCHE_NOISE);
+  rng_context_t *rng_thm_ctx = rng_init(RNG_THERMAL_NOISE);
+  
+  if (!rng_av_ctx || !rng_thm_ctx) {
     ret = -1;
     return ret;
   }

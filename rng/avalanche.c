@@ -37,6 +37,8 @@ static int avalanche_read_one(rng_context_t *ctx, uint16_t timeout_ms) {
   LOG(LVL_INFO, "calling avalanche read_one...\n");
   int read_bytes = 0;
 
+  read_bytes = comms_driver->read_one(ctx, 1);
+
   return read_bytes;
 }
 
