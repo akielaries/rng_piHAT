@@ -1,3 +1,6 @@
 [submodule "schematic/RPi_Hat_Template"]
 	path = schematic/RPi_Hat_Template
 	url = https://github.com/devbisme/RPi_Hat_Template
+[submodule "schematic/rng_HAT/RPi_Hat_Template"]
+	path = schematic/rng_HAT/RPi_Hat_Template
+	url = https://github.com/devbisme/RPi_Hat_Template
