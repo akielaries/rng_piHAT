@@ -454,508 +454,6 @@
 				)
 			)
 		)
-		(symbol "Display_Character:MAN72A"
-			(pin_names
-				(offset 0.635)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -2.54 13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "MAN72A"
-				(at 2.794 -14.224 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Footprint" "Display_7Segment:MAN72A"
-				(at -12.7 -17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.digchip.com/datasheets/parts/datasheet/161/MAN3640A-pdf.php"
-				(at 2.032 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "Single digit 7 segment red LED common anode left hand decimal"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "display LED 7-segment"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MAN72A*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MAN72A_0_0"
-				(text "A"
-					(at 2.286 10.922 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(text "B"
-					(at 4.572 10.16 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(text "C"
-					(at 4.318 7.112 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(text "D"
-					(at 1.778 6.35 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(text "DP"
-					(at -1.778 5.588 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(text "E"
-					(at -0.508 7.112 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(text "F"
-					(at -0.254 10.16 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(text "G"
-					(at 2.032 9.398 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-			)
-			(symbol "MAN72A_0_1"
-				(rectangle
-					(start -5.08 12.7)
-					(end 5.08 -12.7)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 5.588) (xy -0.762 5.588)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 8.128) (xy 0.254 6.096)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 5.588) (xy 2.794 5.588)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 11.176) (xy 0.508 9.144)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 8.636) (xy 3.048 8.636)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 11.684) (xy 3.302 11.684)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.556 8.128) (xy 3.302 6.096)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 11.176) (xy 3.556 9.144)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "MAN72A_1_1"
-				(pin input line
-					(at -7.62 10.16 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 5.08 0)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -5.08 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 5.08 -5.08 180)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 7.62 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 -7.62 180)
-					(length 2.54)
-					(name "CA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "F"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 -10.16 180)
-					(length 2.54)
-					(name "CA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 5.08 2.54 180)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 5.08 0 180)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -10.16 0)
-					(length 2.54)
-					(name "D.P."
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 5.08 -2.54 180)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "MCU_ST_STM32F1:STM32F103C8Tx"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -5942,7 +5440,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 267.462 25.4 90)
 			(effects
 				(font
@@ -6010,7 +5508,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 203.2 45.212 90)
 			(effects
 				(font
@@ -6078,7 +5576,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED-APA102-2020"
+		(property "Footprint" "LED_SMD:LED_0201_0603Metric"
 			(at 101.6 53.34 0)
 			(effects
 				(font
@@ -6216,7 +5714,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 275.59 58.928 90)
 			(effects
 				(font
@@ -6284,12 +5782,13 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RPI_Hat:RPI_Hat_B+"
 			(at 38.1 24.13 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
+				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
@@ -6610,7 +6109,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 260.35 65.278 90)
 			(effects
 				(font
@@ -6678,7 +6177,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 264.16 28.702 90)
 			(effects
 				(font
@@ -6746,7 +6245,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 203.2 35.052 90)
 			(effects
 				(font
@@ -6815,7 +6314,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED-APA102-2020"
+		(property "Footprint" "LED_SMD:LED_0201_0603Metric"
 			(at 227.33 63.5 0)
 			(effects
 				(font
@@ -6959,7 +6458,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 203.2 40.132 90)
 			(effects
 				(font
@@ -7027,7 +6526,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 214.63 61.722 90)
 			(effects
 				(font
@@ -7096,7 +6595,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED-APA102-2020"
+		(property "Footprint" "LED_SMD:LED_0201_0603Metric"
 			(at 262.89 57.15 0)
 			(effects
 				(font
@@ -7359,111 +6858,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Display_Character:MAN72A")
-		(at 132.08 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d782b829-df5a-4609-805f-674619425fd8")
-		(property "Reference" "U2"
-			(at 132.08 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MAN72A"
-			(at 132.08 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Display_7Segment:MAN72A"
-			(at 119.38 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digchip.com/datasheets/parts/datasheet/161/MAN3640A-pdf.php"
-			(at 134.112 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single digit 7 segment red LED common anode left hand decimal"
-			(at 132.08 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "ac0c84df-bb25-49a9-8036-1f899b2f5f81")
-		)
-		(pin "5"
-			(uuid "57d5e71d-d9ac-4957-b257-53005b559ff8")
-		)
-		(pin "4"
-			(uuid "2ca915ae-f7e9-4fc9-8f33-1c7f18f03cf6")
-		)
-		(pin "12"
-			(uuid "bf24abee-7153-4500-b8d1-51ca26aa4a12")
-		)
-		(pin "7"
-			(uuid "05ba2397-7f85-4f72-b2d6-0f684a50a7ab")
-		)
-		(pin "11"
-			(uuid "a5b4b135-d6cc-4796-b98d-0c0079251b2d")
-		)
-		(pin "13"
-			(uuid "06030e7e-dc81-4059-a6c9-4475423c20c6")
-		)
-		(pin "10"
-			(uuid "cffbc48e-7104-48fe-a4dd-e51c23af8a58")
-		)
-		(pin "14"
-			(uuid "728feaf7-44c2-4c5f-a82c-820c4225af1f")
-		)
-		(pin "2"
-			(uuid "27c32071-ba8f-4f00-a48d-30d2ec06fb67")
-		)
-		(pin "1"
-			(uuid "5ece9c8a-05a8-4079-ae61-55b81a0982a4")
-		)
-		(pin "8"
-			(uuid "e43e96fc-630c-4f63-b6d6-7e072a9fdb20")
-		)
-		(pin "9"
-			(uuid "fb157db8-9ac0-4ec5-96b6-037fcb31f2c8")
-		)
-		(pin "6"
-			(uuid "ff5cd7fc-3e28-482d-a5f2-269212b0fe16")
-		)
-		(instances
-			(project "rng_HAT"
-				(path "/477dca79-6d5f-49ad-92a9-2ab01bbd6391"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 252.73 25.4 0)
 		(mirror x)
@@ -7489,7 +6883,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 250.952 25.4 90)
 			(effects
 				(font
@@ -7557,7 +6951,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 229.87 55.372 90)
 			(effects
 				(font
