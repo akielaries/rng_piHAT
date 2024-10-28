@@ -2160,19 +2160,6 @@
 				)
 			)
 		)
-		(fp_text user "Dimensions taken from\nhttps://github.com/raspberrypi/hats/blob/master/hat-board-mechanical.pdf"
-			(at 4 63 90)
-			(unlocked yes)
-			(layer "Cmts.User")
-			(uuid "c643a2c4-150a-4a8c-9e65-be4e0bef6baa")
-			(effects
-				(font
-					(size 1.5 1.5)
-					(thickness 0.15)
-					(italic yes)
-				)
-			)
-		)
 		(fp_text user "Select one of these board edges depending \nupon the type of socket that is used."
 			(at 50 -3.5 90)
 			(unlocked yes)
