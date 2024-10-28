@@ -8289,6 +8289,7 @@
 		)
 		(pin "34"
 			(uuid "bd9e470c-8ae2-4040-918b-b93883fb862c")
+			(alternate "SYS_JTMS-SWDIO")
 		)
 		(pin "36"
 			(uuid "7f4938dd-e217-463d-976b-6673e4f4ecb5")
@@ -8298,6 +8299,7 @@
 		)
 		(pin "5"
 			(uuid "ab6e884a-0aa4-4803-a99a-139016aad50c")
+			(alternate "RCC_OSC_IN")
 		)
 		(pin "17"
 			(uuid "493b968c-bcc9-46fb-94cd-f9e06894c895")
@@ -8336,6 +8338,7 @@
 		)
 		(pin "6"
 			(uuid "18fe3eaf-4b54-4958-b69d-e3d44bf5e1d8")
+			(alternate "RCC_OSC_OUT")
 		)
 		(pin "35"
 			(uuid "ed7216e5-a9ca-46fe-843c-9a66fb0dacc8")
@@ -8377,6 +8380,7 @@
 		)
 		(pin "37"
 			(uuid "706e4be1-2b5e-4893-95d0-e2d51270a72f")
+			(alternate "SYS_JTCK-SWCLK")
 		)
 		(pin "25"
 			(uuid "2051c016-3e22-49a7-8fba-90d7fb896bd6")
