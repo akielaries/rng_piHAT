@@ -3,12 +3,12 @@ Pi HAT with randon noise and number generators
 
 # Design
 ## PCB
-![PCB_design](schematic/pcb_design.pdf)
+![PCB_design](schematic/pcb_design.svg)
 
 ![PCB_3d](schematic/PCB_3d.png)
 
 ## Schematic
-![schematic](schematic/schematic_design.pdf)
+![schematic](schematic/schematic_design.svg)
 
 # Hardware Random Number Generators
 ## Some notes for potential use
