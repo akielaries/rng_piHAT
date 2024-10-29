@@ -1,6 +1,14 @@
 # rng_piHAT
 Pi HAT with randon noise and number generators 
 
+# Design
+## PCB
+![PCB_design](schematic/PCB_design.pdf)
+![PCB_3d](schematic/PCB_3d.pdf)
+
+## Schematic
+![schematic](schematic/schematic.pdf)
+
 # Hardware Random Number Generators
 ## Some notes for potential use
 Potential entropy sources (with a combination of other parts):
