@@ -4,6 +4,7 @@ Pi HAT with randon noise and number generators
 # Design
 ## PCB
 ![PCB_design](schematic/pcb_design.pdf)
+
 ![PCB_3d](schematic/PCB_3d.png)
 
 ## Schematic
