@@ -3,6 +3,8 @@ Pi HAT with randon noise and number generators
 
 # Design
 ## PCB
+
+Prototype PCB designs I'm playing around with
 ![PCB_design](schematic/pcb_design.svg)
 
 ![PCB_3d](schematic/PCB_3d.png)
